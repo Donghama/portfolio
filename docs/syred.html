@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyRED — 임동하 Dongha Lim</title>
+<meta name="description" content="SyRED: 보이스피싱 고립을 끊는 보호자 연결 서비스. Case study by Dongha Lim.">
+<script>(function(){var l;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')}catch(e){}if(l==='en'||l==='ko'){document.documentElement.dataset.lang=l;document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}}})();</script>
+<link rel="stylesheet" href="assets/modernist.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="index.html"><span class="ko">임동하</span><span class="en">Dongha Lim</span></a>
+  <a href="index.html#work"><span class="ko">← 전체 프로젝트</span><span class="en">← All work</span></a>
+  <div class="lang-toggle">
+    <button type="button" class="btn btn-primary" data-set-lang="ko">KR</button>
+    <button type="button" class="btn btn-ghost" data-set-lang="en">EN</button>
+  </div>
+</nav>
+
+<header class="wrap cs-head">
+  <span class="kicker">Case Study 01</span>
+  <h1 class="display cs-title">SyRED</h1>
+  <p class="cs-sub"><span class="ko">보이스피싱 고립을 끊는 보호자 연결 서비스</span><span class="en">A guardian-connection service that breaks the isolation behind voice phishing</span></p>
+  <div class="meta">
+    <div><div class="label t70">Year</div><div class="meta-value">2026.09 — 10</div></div>
+    <div><div class="label t70">Type</div><div class="meta-value"><span class="ko">개인 · 콘셉트</span><span class="en">Solo · Concept</span></div></div>
+    <div><div class="label t70">Role</div><div class="meta-value"><span class="ko">리서치 · 서비스 콘셉트 · 인터랙션 · UI (100%)</span><span class="en">Research, concept, interaction, UI (100%)</span></div></div>
+    <div><div class="label t70">Device</div><div class="meta-value"><span class="ko">스마트폰 + 스마트 워치</span><span class="en">Smartphone + smartwatch</span></div></div>
+  </div>
+  <div class="tags"><span class="tag tag-outline">Safety UX</span><span class="tag tag-outline">AI-assisted Intervention</span><span class="tag tag-outline">Wearable Interaction</span><span class="tag tag-outline">Trusted Connection</span></div>
+</header>
+<div class="wrap cover"><figure class="slot grayscale r16-8"><span class="slot-cap">SyRED 키 비주얼</span></figure></div>
+
+<section class="dark">
+  <div class="wrap pad stack">
+    <span class="kicker"><span class="ko">핵심 결정</span><span class="en">The key decision</span></span>
+    <h2 class="display decision-title"><span class="ko">경고를 더 크게 띄우지 않습니다. 고립을 끊습니다.</span><span class="en">Not a louder warning. A broken isolation.</span></h2>
+    <p class="lead decision-copy t80"><span class="ko">생체신호의 이상이 통화·송금 상황과 함께 감지되면, AI가 기존 통화를 대신 받고 송금을 멈춘 뒤, 사용자가 미리 정해 둔 보호자와 연결합니다.</span><span class="en">When abnormal biosignals coincide with a suspicious call and a transfer, AI takes over the ongoing call, pauses the transfer, and connects the user with a guardian they chose in advance.</span></p>
+  </div>
+</section>
+<section class="wrap pad split">
+  <span class="kicker"><span class="ko">왜 이렇게 결정했나</span><span class="en">Why</span></span>
+  <div style="display: grid; gap: 20px;">
+    <p class="display split-lead"><span class="ko">피해자는 경고를 못 봐서가 아니라, 봐도 멈출 수 없는 상태에 놓여 있었습니다.</span><span class="en">Victims don’t miss the warning. They see it and still can’t stop.</span></p>
+    <p class="body t78" style="max-width: none;"><span class="ko">그래서 질문을 “어떻게 더 강하게 경고할까”에서 “어떻게 고립을 끊을까”로 바꿨습니다.</span><span class="en">So I changed the question from “how do we warn harder?” to “how do we break the isolation?”</span></p>
+  </div>
+</section>
+
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">배경</span><span class="en">Background</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">수법은 바뀌고, 피해는 커지고 있습니다.</span><span class="en">The tactics have changed, and the losses are growing.</span></h2>
+    <div class="stat"><span class="display stat-num"><span class="ko">1조 2,578억 원</span><span class="en">₩1.26 trillion</span></span><span style="font-size: 14px;" class="t70"><span class="ko">2025년 보이스피싱 피해액 · 사상 최대 · 경찰청, 2026.01</span><span class="en">Voice-phishing losses in Korea, 2025 · an all-time high · Korean National Police Agency, Jan 2026</span></span></div>
+    <div class="matrix">
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">기관 사칭형 비중</span><span class="en">Institution impersonation</span></span></div><div><span class="cell"><span class="ko">피해액의 78.6%</span><span class="en">78.6% of losses</span></span></div><div><span class="source t70"><span class="ko">경찰청, 2026.01</span><span class="en">KNPA, Jan 2026</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">기관 사칭형 발생 건수</span><span class="en">Impersonation cases</span></span></div><div><span class="cell"><span class="ko">3,384건(2016) → 13,323건(2025), 약 4배</span><span class="en">3,384 (2016) → 13,323 (2025), about 4×</span></span></div><div><span class="source t70"><span class="ko">공공데이터포털</span><span class="en">Korea Public Data Portal</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">기관 사칭 1건당 피해액</span><span class="en">Loss per impersonation case</span></span></div><div><span class="cell"><span class="ko">7,438만 원 (전년 동기 대비 +76.3%)</span><span class="en">₩74.38M (+76.3% year over year)</span></span></div><div><span class="source t70"><span class="ko">경찰청 국가수사본부, 2025.09</span><span class="en">KNPA National Investigation HQ, Sep 2025</span></span></div></div>
+    </div>
+    <p class="body t78"><span class="ko">대출 사기형은 줄고 기관 사칭형이 늘었다는 것은, 사기의 무기가 “미끼”에서 “심리적 압박”으로 옮겨 갔다는 뜻입니다. 그래서 “어떻게 속이는가”보다 “왜 알면서도 멈추지 못하는가”에서 출발했습니다.</span><span class="en">Loan scams are shrinking while impersonation grows: the weapon has moved from bait to psychological pressure. So I started not from “how do they deceive?” but from “why can’t people stop, even when they know?”</span></p>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">문제 정의</span><span class="en">Problem</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">사기범은 판단을 흐리고, 도움을 막습니다.</span><span class="en">Scammers cloud judgment and block help.</span></h2>
+    <div class="acts acts-3">
+      <div><span class="label a700">01</span><b><span class="ko">몸은 판단보다 먼저 반응해요</span><span class="en">The body reacts before the mind decides</span></b><span class="copy t78"><span class="ko">모호한 상황에서 판단할 때, 심박과 동공은 판단이 서기 전부터 먼저 변합니다.</span><span class="en">In ambiguous decisions, heart rate and pupils change before a judgment forms.</span></span><span class="source t70">IEICE, 2019</span></div>
+      <div><span class="label a700">02</span><b><span class="ko">재촉 속에서 판단할 시간을 놓쳐요</span><span class="en">Under pressure, there’s no time to think</span></b><span class="copy t78"><span class="ko">온라인 금융사기 피해자의 55%는 조금만 더 기다렸다면 이상한 점을 알아챘을 것이라고 답했습니다.</span><span class="en">55% of online fraud victims said they would have noticed something was off if they had waited a little longer.</span></span><span class="source t70"><span class="ko">ABN AMRO, 2023 · 피해자 500명</span><span class="en">ABN AMRO, 2023 · 500 victims</span></span></div>
+      <div><span class="label a700">03</span><b><span class="ko">스스로 도움을 요청하기 어려워요</span><span class="en">Asking for help feels impossible</span></b><span class="copy t78"><span class="ko">사기범은 “전화를 끊으면 불법”이라며 통화를 붙잡아 두고, 누구에게도 알리지 못하게 합니다.</span><span class="en">Scammers say hanging up is illegal, keep victims on the line, and forbid them from telling anyone.</span></span><span class="source t70"><span class="ko">DeLiema, 2022 · 美 사칭 사기 신고 600건</span><span class="en">DeLiema, 2022 · 600 U.S. impersonation reports</span></span></div>
+    </div>
+    <p class="body t78"><span class="ko">국내에서는 피해자를 모텔에 스스로 머물게 하는 ‘셀프감금’ 수법까지 나왔고, 피해자는 짧게는 3시간 20분, 길게는 4일 동안 외부와 끊긴 채 지냈습니다(언론 보도 사례).</span><span class="en">In Korea, scammers have even had victims confine themselves in motels, cut off from everyone for anywhere from 3 hours 20 minutes to 4 days (press reports).</span></p>
+    <div class="callout"><span class="label a700">Insight</span><span class="callout-text"><span class="ko">세 문제의 공통점은 피해자가 혼자라는 것입니다.</span><span class="en">What the three problems share: the victim is alone.</span></span></div>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">생각의 변화</span><span class="en">Thinking process</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">“막는 서비스”에서 “연결하는 서비스”로 — 생각이 바뀐 일곱 지점</span><span class="en">From a service that blocks to one that connects: seven turning points</span></h2>
+    <div class="rule-top" style="display: grid;">
+      <div class="swap"><span class="swap-from t60"><span class="ko">생체신호가 이상하면 송금을 막는다</span><span class="en">Block the transfer when biosignals look off</span></span><div class="swap-to"><b>→ <span class="ko">보호자를 연결해 고립을 끊는다</span><span class="en">Connect a guardian to break the isolation</span></b><span class="swap-why t75"><span class="ko">막기만 하면 피해자는 여전히 혼자이고, 사기범은 다른 방법을 찾습니다.</span><span class="en">Blocking alone leaves the victim alone, and scammers find another way.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">사기 전화를 끊게 한다</span><span class="en">Make them hang up</span></span><div class="swap-to"><b>→ <span class="ko">통화는 두고, 그 사이에 보호자를 넣는다</span><span class="en">Keep the call; put a guardian in between</span></b><span class="swap-why t75"><span class="ko">피해자는 “끊으면 불법”이라는 말에 끊지 못합니다. 끊으라는 요구는 또 하나의 압박입니다.</span><span class="en">Told that hanging up is illegal, victims can’t. Asking them to hang up is just more pressure.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">AI가 피해자를 설득한다</span><span class="en">AI persuades the victim</span></span><div class="swap-to"><b>→ <span class="ko">AI는 통화를 대신 받고, 보호자에게 상황을 짧게 전달한다</span><span class="en">AI holds the call and briefs the guardian</span></b><span class="swap-why t75"><span class="ko">판단을 돌리는 것은 믿는 사람의 목소리라고 봤습니다. AI는 그 연결을 만드는 역할만 맡습니다.</span><span class="en">What turns a decision around is a trusted voice. AI only makes that connection.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">보호자 = 자녀</span><span class="en">Guardian = the user’s child</span></span><div class="swap-to"><b>→ <span class="ko">보호자는 사용자가 직접 고르고, 상대도 수락해야 등록</span><span class="en">Users pick their guardians, who must accept</span></b><span class="swap-why t75"><span class="ko">누구의 말을 들을지는 사람마다 다릅니다. 은행 상담원 같은 권위 연결은 빼고, 순서를 정한 보호자만 남겼습니다.</span><span class="en">Whom we listen to differs by person. I dropped authority figures like bank agents and kept only ranked guardians.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">위기 순간에 물어본다</span><span class="en">Ask in the moment of crisis</span></span><div class="swap-to"><b>→ <span class="ko">평온할 때 미리 약속해 둔다</span><span class="en">Agree on it in advance, while calm</span></b><span class="swap-why t75"><span class="ko">위기 순간엔 판단할 수 없다는 것이 출발점이었습니다. 돛대에 스스로를 묶은 율리시스처럼, 보호 규칙을 미리 작성합니다.</span><span class="en">The starting point was that no one can decide in a crisis. Like Ulysses tied to the mast, users write their rules ahead of time.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">모든 것을 사용자가 고른다</span><span class="en">Let the user choose everything</span></span><div class="swap-to"><b>→ <span class="ko">강한 기본값 + 열린 선택권</span><span class="en">Strong defaults, open choices</span></b><span class="swap-why t75"><span class="ko">기본값이 약하면 위기 순간에 작동하지 않습니다. 대신 모든 기본값은 끌 수 있고 언제든 해제할 수 있습니다.</span><span class="en">Weak defaults fail when it counts. But every default can be turned off or released at any time.</span></span></div></div>
+      <div class="swap"><span class="swap-from t60"><span class="ko">고령층 → 20·30대 타깃</span><span class="en">Target older adults, then people in their 20s–30s</span></span><div class="swap-to"><b>→ <span class="ko">연령이 아니라 상황 — 기관 사칭 통화 중인 사람</span><span class="en">Not an age group, a situation: anyone on an impersonation call</span></b><span class="swap-why t75"><span class="ko">기관 사칭형은 특정 연령보다 압박과 고립이라는 상황이 공통점이었습니다.</span><span class="en">Impersonation victims share a situation of pressure and isolation more than an age.</span></span></div></div>
+    </div>
+    <p class="body t78"><span class="ko">SyRED는 송금 직전의 마지막 방어선입니다. 로맨스 스캠처럼 긴 시간 감정을 쌓는 사기는 이 방식으로 다루기 어렵다고 보고 범위에서 뺐습니다.</span><span class="en">SyRED is the last line of defense right before a transfer. Long-con scams built on emotion, like romance scams, are out of scope.</span></p>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">솔루션</span><span class="en">Solution</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">SyRED가 개입하는 세 순간</span><span class="en">Three moments where SyRED steps in</span></h2>
+    <div class="flow t70"><span><span class="ko">기관 사칭</span><span class="en">Impersonation</span></span><span><span class="ko">시간 압박</span><span class="en">Time pressure</span></span><span><span class="ko">고립</span><span class="en">Isolation</span></span><span><span class="ko">송금</span><span class="en">Transfer</span></span></div>
+    <div class="acts acts-3">
+      <div><span class="label a700"><span class="ko">01 · 문제 1에 대응</span><span class="en">01 · answers problem 1</span></span><b><span class="ko">위험 징후 확인</span><span class="en">Detect the warning signs</span></b><span class="copy t78"><span class="ko">평소와 다른 생체신호를 통화·송금 상황과 함께 대신 알아차립니다.</span><span class="en">Notices unusual biosignals alongside the call and transfer context.</span></span></div>
+      <div><span class="label a700"><span class="ko">02 · 문제 2에 대응</span><span class="en">02 · answers problem 2</span></span><b><span class="ko">AI 응대로 전환</span><span class="en">Hand the call to AI</span></b><span class="copy t78"><span class="ko">AI가 기존 통화를 받고, 송금은 잠시 멈춰 판단할 시간을 돌려줍니다.</span><span class="en">AI takes the call and the transfer pauses, giving back time to think.</span></span></div>
+      <div><span class="label a700"><span class="ko">03 · 문제 3에 대응</span><span class="en">03 · answers problem 3</span></span><b><span class="ko">보호자와 상황 확인</span><span class="en">Check in with a guardian</span></b><span class="copy t78"><span class="ko">믿는 사람과 함께 확인하고 결정합니다. 이 서비스의 중심입니다.</span><span class="en">The user checks and decides with someone they trust — the heart of the service.</span></span></div>
+    </div>
+    <p class="body t78"><span class="ko">각 단계는 사용자가 미리 동의한 감지·연결 조건에 따라서만 실행됩니다.</span><span class="en">Each step runs only under detection and connection conditions the user agreed to in advance.</span></p>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">결정과 트레이드오프</span><span class="en">Decisions &amp; trade-offs</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">강한 기본값, 열린 선택권</span><span class="en">Strong defaults, open choices</span></h2>
+    <div class="matrix">
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">보호자 연결</span><span class="en">Guardian connection</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">묻지 않고 1순위부터 자동 연결, 응답 없으면 2순위</span><span class="en">Connects to guardian #1 without asking; #2 if no answer</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell"><span class="ko">알림만 받기로 변경</span><span class="en">Switch to notifications only</span></span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">위기 순간의 판단을 요구하지 않음</span><span class="en">No decision asked of someone in crisis</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">원치 않는 연결이 생길 수 있음</span><span class="en">Unwanted connections can happen</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">송금 멈춤</span><span class="en">Transfer pause</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">보호자와 확인할 때까지 멈춤</span><span class="en">Paused until checked with a guardian</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell"><span class="ko">설정에서 끄기</span><span class="en">Turn off in settings</span></span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">판단할 시간을 돌려줌</span><span class="en">Gives back time to think</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">정상 송금이 잠시 늦어짐</span><span class="en">Legitimate transfers are briefly delayed</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">해제 코드</span><span class="en">Release code</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">미리 설정한 코드 하나로 이번 보호 상태 전체(연결 + 송금 멈춤)를 끔</span><span class="en">One preset code ends this protection session (connection + pause)</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell"><span class="ko">코드 변경</span><span class="en">Change the code</span></span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">오탐을 바로 풀 수 있음</span><span class="en">False alarms can be cleared at once</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">코드를 끌어내려는 시도가 생길 수 있음</span><span class="en">Scammers may try to extract the code</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">기존 통화 다시 받기</span><span class="en">Returning to the call</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">기존 통화는 AI가 대신 응대</span><span class="en">AI keeps handling the original call</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell"><span class="ko">사용자가 다시 받기</span><span class="en">User takes the call back</span></span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">진짜 중요한 전화에 대비</span><span class="en">Covers calls that really matter</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">사기범과 다시 연결될 수 있음</span><span class="en">The user may reconnect with the scammer</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">감지 조건</span><span class="en">Detection</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">심박 이상 + 낯선 번호 통화 + 송금 화면 진입이 겹칠 때만</span><span class="en">Only when abnormal heart rate, an unknown caller and a transfer screen coincide</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell"><span class="ko">감지 신호 켜고 끄기 (타자 속도는 보조 신호)</span><span class="en">Toggle signals (typing speed is secondary)</span></span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">오탐을 줄임</span><span class="en">Fewer false alarms</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">한 가지 신호만 있을 때는 작동하지 않음</span><span class="en">A single signal alone won’t trigger it</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">공유 범위</span><span class="en">What’s shared</span></span></div><div><span class="label t70"><span class="ko">기본값</span><span class="en">Default</span></span><span class="cell"><span class="ko">보호자에게는 관찰된 상황만 짧게 (계좌·금액 제외)</span><span class="en">Guardians get a short summary of what was observed (no account or amount)</span></span></div><div><span class="label t70"><span class="ko">바꿀 수 있는 것</span><span class="en">User can change</span></span><span class="cell">—</span></div><div><span class="label a700"><span class="ko">얻은 것</span><span class="en">Gained</span></span><span class="cell"><span class="ko">사생활을 지킴</span><span class="en">Privacy is protected</span></span></div><div><span class="label t70"><span class="ko">내준 것</span><span class="en">Gave up</span></span><span class="cell"><span class="ko">보호자가 알 수 있는 정보가 적음</span><span class="en">Guardians know less</span></span></div></div>
+    </div>
+    <div class="callout"><span class="callout-text"><span class="ko">SyRED는 사용자 대신 결정하지 않습니다. 평소의 내가 정한 규칙을 위기의 내가 지키도록 돕습니다.</span><span class="en">SyRED doesn’t decide for the user. It helps the self in crisis keep the rules the calm self wrote.</span></span></div>
+  </div>
+</section>
+
+<hr class="hr">
+<section class="wrap pad stack">
+  <span class="kicker"><span class="ko">인터페이스</span><span class="en">Interface</span></span>
+  <h2 class="display row-title" style="max-width: 30ch;"><span class="ko">AI가 대신 응대하는 동안, 사용자는 보호자와 상황을 확인합니다.</span><span class="en">While AI handles the call, the user checks in with a guardian.</span></h2>
+  <p class="body t78"><span class="ko">평소에 보호 규칙을 정해 두면, 조건에 맞는 순간 규칙이 작동하고 끝내는 것은 사용자가 정합니다. 화면은 스마트폰과 워치 두 기기로 구성했습니다.</span><span class="en">Users set protection rules ahead of time. When the conditions are met the rules kick in, and the user decides when it ends. The interface spans a phone and a watch.</span></p>
+  <div class="shots shots-key shots-4">
+    <div class="shot shot-key">
+      <figure class="slot grayscale phone phone-315"><span class="slot-cap">POINT 1 · 내 보호자</span></figure>
+      <div class="shot-key-cap"><span class="shot-key-num">POINT 1 · <span class="ko">사용자</span><span class="en">User</span></span><span class="display shot-key-title"><span class="ko">보호자 설정</span><span class="en">Set up guardians</span></span><span class="shot-key-copy t75"><span class="ko">보호자 순서, 연결 방식, 송금 멈춤, 해제 코드, 감지 신호를 정합니다.</span><span class="en">Set guardian order, connection mode, transfer pause, release code and detection signals.</span></span><span class="shot-key-copy t60"><span class="ko">보호자 추가 → 상대에게 수락 요청 → 수락 시 등록</span><span class="en">Add guardian → request sent → registered on acceptance</span></span></div>
+    </div>
+    <div class="shot shot-key">
+      <figure class="slot grayscale r1-1 watch-260"><span class="slot-cap">POINT 2 · 워치 생체 신호 감지</span></figure>
+      <div class="shot-key-cap"><span class="shot-key-num">POINT 2 · <span class="ko">워치</span><span class="en">Watch</span></span><span class="display shot-key-title"><span class="ko">생체 신호 감지</span><span class="en">Biosignal detection</span></span><span class="shot-key-copy t75"><span class="ko">심박 변화를 통화·송금 상황과 함께 살핍니다.</span><span class="en">Reads heart-rate changes together with the call and transfer context.</span></span><span class="shot-key-copy t60"><span class="ko">세 조건이 겹침 → AI가 통화를 넘겨받고 송금 멈춤 → 1순위 보호자에게 요청</span><span class="en">Three conditions coincide → AI takes the call, transfer pauses → guardian #1 is asked</span></span></div>
+    </div>
+    <div class="shot shot-key">
+      <figure class="slot grayscale phone phone-315"><span class="slot-cap">POINT 3 · 보호자 연결 요청</span></figure>
+      <div class="shot-key-cap"><span class="shot-key-num">POINT 3 · <span class="ko">보호자</span><span class="en">Guardian</span></span><span class="display shot-key-title"><span class="ko">보호자에게 브리핑</span><span class="en">Brief the guardian</span></span><span class="shot-key-copy t75"><span class="ko">관찰된 상황만 짧게 공유합니다 — 낯선 번호 14분, 심박 변화, 송금 화면 진입.</span><span class="en">Shares only what was observed: 14 minutes with an unknown number, a heart-rate change, a transfer screen opened.</span></span><span class="shot-key-copy t60"><span class="ko">“지금 연결” → 사용자와 통화 시작 / 못 받으면 “2순위에게 넘기기”</span><span class="en">“Connect now” → call with the user / can’t answer → “Pass to #2”</span></span></div>
+    </div>
+    <div class="shot shot-key">
+      <figure class="slot grayscale phone phone-315"><span class="slot-cap">POINT 4 · 보호자와 통화</span></figure>
+      <div class="shot-key-cap"><span class="shot-key-num">POINT 4 · <span class="ko">사용자</span><span class="en">User</span></span><span class="display shot-key-title"><span class="ko">보호자와 함께 확인</span><span class="en">Check in together</span></span><span class="shot-key-copy t75"><span class="ko">보호자와 따로 대화합니다. 내 목소리는 보호자에게만 들립니다.</span><span class="en">A separate conversation with the guardian; only they can hear the user.</span></span><span class="shot-key-copy t60"><span class="ko">확인 후 해제 코드로 종료 / 필요하면 “기존 통화 다시 받기”</span><span class="en">End with the release code / or “Take the original call back”</span></span></div>
+    </div>
+  </div>
+  <div style="display: grid; gap: 14px;">
+    <span class="kicker"><span class="ko">SyRED의 규칙</span><span class="en">SyRED’s rules</span></span>
+    <ul class="list">
+      <li><span><b><span class="ko">대화는 둘 사이에서</span><span class="en">The conversation stays between two</span></b> — <span class="ko">보호자와의 대화는 기존 상대에게 전달되지 않습니다.</span><span class="en">nothing said to the guardian reaches the original caller.</span></span></li>
+      <li><span><b><span class="ko">응답이 없을 때</span><span class="en">If there’s no answer</span></b> — <span class="ko">1순위가 받지 않으면 미리 정한 2순위에게 요청합니다.</span><span class="en">if guardian #1 doesn’t pick up, guardian #2 is asked.</span></span></li>
+      <li><span><b><span class="ko">확인이 끝나면</span><span class="en">When it’s settled</span></b> — <span class="ko">사용자가 해제 코드로 이번 연결을 종료하거나 기존 통화로 돌아갈 수 있습니다.</span><span class="en">the user ends the session with the release code or returns to the original call.</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">이름</span><span class="en">Name</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">이름에 개입의 의미를 담았습니다.</span><span class="en">The name is about stepping in.</span></h2>
+    <div class="acts plain" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));">
+      <div><span class="display brand-mark">Sy</span><span class="copy"><span class="ko">‘사이(between)’. 사기범과 사용자 사이에 보호자가 들어섭니다.</span><span class="en">From “sai”, Korean for “between”: a guardian steps in between the scammer and the user.</span></span></div>
+      <div><span class="display brand-mark warning-red">RED</span><span class="copy"><span class="ko">누구나 경고로 읽는 색입니다.</span><span class="en">The color everyone reads as a warning.</span></span></div>
+    </div>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker"><span class="ko">한계와 다음 단계</span><span class="en">Limitations &amp; next</span></span></div>
+  <div class="row-body">
+    <h2 class="display row-title"><span class="ko">사용자 테스트를 거치지 않은 콘셉트라, 효과 대신 남은 질문과 확인 방법을 적습니다.</span><span class="en">It hasn’t been user-tested, so instead of claiming results I list open questions and how to test them.</span></h2>
+    <div class="matrix">
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">진짜 은행 전화나 긴장한 정상 송금을 잡으면?</span><span class="en">What if it flags a real bank call or a nervous but legitimate transfer?</span></span></div><div><span class="label t70"><span class="ko">지금의 답</span><span class="en">Current answer</span></span><span class="cell"><span class="ko">세 조건이 겹칠 때만 작동하고, 해제 코드로 바로 풀 수 있습니다.</span><span class="en">It fires only when all three conditions coincide, and the release code clears it at once.</span></span></div><div><span class="label a700"><span class="ko">다음에 해 볼 것</span><span class="en">Next</span></span><span class="cell"><span class="ko">오탐률을 재는 시나리오 테스트</span><span class="en">Scenario tests to measure false positives</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">기존 통화로 돌아가면 사기범이 해제 코드를 요구하지 않을까?</span><span class="en">Back on the call, won’t the scammer demand the release code?</span></span></div><div><span class="label t70"><span class="ko">지금의 답</span><span class="en">Current answer</span></span><span class="cell"><span class="ko">돌아가도 송금 멈춤은 유지됩니다. 코드를 요구받을 여지는 현재 설계의 한계입니다.</span><span class="en">The transfer stays paused, but the risk of being asked for the code is a known limit of this design.</span></span></div><div><span class="label a700"><span class="ko">다음에 해 볼 것</span><span class="en">Next</span></span><span class="cell"><span class="ko">복귀 후에는 보호자 확인을 거쳐야 해제되도록 변경</span><span class="en">After returning, require a guardian check before release</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">자동 연결이 보호자에게 부담이 되지 않을까?</span><span class="en">Is automatic connection a burden on guardians?</span></span></div><div><span class="label t70"><span class="ko">지금의 답</span><span class="en">Current answer</span></span><span class="cell"><span class="ko">보호자도 미리 수락하고, 못 받으면 2순위로 넘어갑니다.</span><span class="en">Guardians accept in advance, and it passes to #2 if they can’t answer.</span></span></div><div><span class="label a700"><span class="ko">다음에 해 볼 것</span><span class="en">Next</span></span><span class="cell"><span class="ko">보호자 인터뷰</span><span class="en">Guardian interviews</span></span></div></div>
+      <div class="matrix-row"><div><span class="cell-head"><span class="ko">믿는 사람과 통화하면 정말 멈추게 될까?</span><span class="en">Does talking to someone trusted really make people stop?</span></span></div><div><span class="label t70"><span class="ko">지금의 답</span><span class="en">Current answer</span></span><span class="cell"><span class="ko">국내 셀프감금 사례에서 가족 통화가 설득의 계기가 된 적이 있습니다 (사례, 통계 아님).</span><span class="en">In Korean self-confinement cases, a family call has been the turning point (anecdotes, not statistics).</span></span></div><div><span class="label a700"><span class="ko">다음에 해 볼 것</span><span class="en">Next</span></span><span class="cell"><span class="ko">롤플레이 통화로 판단 변화 비교</span><span class="en">Compare decisions in role-play calls</span></span></div></div>
+    </div>
+    <p class="source t70"><span class="ko">타자 속도는 송금 화면에서 계좌번호·금액을 입력하는 속도를 참고하는 보조 신호이며, 판단의 중심은 심박과 통화·송금 상황입니다.</span><span class="en">Typing speed (how fast account numbers and amounts are entered) is a secondary signal; heart rate and the call/transfer context carry the decision.</span></p>
+  </div>
+</section>
+<hr class="hr">
+<section class="wrap pad row">
+  <div class="row-label"><span class="kicker">References</span></div>
+  <div class="row-body">
+    <ul class="refs t70">
+      <li>ABN AMRO (2023). Survey: Nearly half of online fraud due to clicking too fast</li>
+      <li>DeLiema, M. (2022). Testimony to the Elder Justice Coordinating Council</li>
+      <li>Imaruoka, T. et al. (2019). Detection of decision-making process by biosignals (I). IEICE Technical Report</li>
+      <li>헤럴드경제 (2026.01). 지난해 보이스피싱 피해 1.2조 ‘사상 최대’ — 경찰청 자료</li>
+      <li>보안뉴스 (2025.09). 2030세대 대상 기관사칭형 보이스피싱 성행 — 경찰청 국가수사본부 자료</li>
+      <li>공공데이터포털. 보이스피싱 현황 통계 (2016–2025)</li>
+      <li>세계일보 (2025.09). 익산 셀프감금 보이스피싱 사례 · 전북일보 (2025.08). 모텔 격리 생활 20대 사례</li>
+    </ul>
+    <p class="source t70"><span class="ko">키 비주얼은 AI로 생성했고, UI는 직접 디자인했습니다.</span><span class="en">The key visual was generated with AI; the UI is my own design.</span></p>
+  </div>
+</section>
+
+<a class="next banner" href="ditto.html">
+  <div class="wrap next-inner">
+    <div style="display: grid; gap: 8px;"><span class="kicker" style="color: inherit;">Next</span><span class="display next-name">ditto</span></div>
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  </div>
+</a>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
